@@ -9,7 +9,7 @@ def uppercase(stru):
             holder = ord(stru[i]) + offset
             new_str = chr(holder)
         else:
-           new_str = stru[i]
+            new_str = stru[i]
         print("{}".format(new_str), end='')
         i = i + 1
     print("")
