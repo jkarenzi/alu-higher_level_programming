@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
     for item in mem:
         sum += item
     return sum
-    
+        
