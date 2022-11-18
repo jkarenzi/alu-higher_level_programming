@@ -1,1 +1,1 @@
-Python Network #0
+This is a readme for python network
