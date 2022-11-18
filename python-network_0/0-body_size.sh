@@ -1,3 +1,3 @@
-#!/bin/bash 
-# a script that takes in a url and displays the content 
-curl -sI "$1" | grep 'Content-Length'| cut -d " " -f2
+#!/bin/bash
+# display size of body
+curl -sI $1 | grep Content-Length | tail -c 4

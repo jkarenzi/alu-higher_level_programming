@@ -1,3 +1,3 @@
-#!/bin/bash 
-# a script that displays the body of a file 
-curl -sLfG "$1"
+#!/bin/bash
+# display body
+curl -Ls $1
