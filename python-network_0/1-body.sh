@@ -1,3 +1,3 @@
 #!/bin/bash
-# display body
-curl -Ls $1
+# a script that Takes in a URL, sends a GET request to the URL,and displays the body of the response
+curl -sL "$1"

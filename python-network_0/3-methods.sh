@@ -1,3 +1,3 @@
 #!/bin/bash
-#  script that displays methods
-curl -si -X "OPTIONS" $1 | grep "Allow" | cut -d " " -f 2-
+# displays methods
+curl -sI "$1" -X OPTIONS | grep "Allow" | cut -c 8-
