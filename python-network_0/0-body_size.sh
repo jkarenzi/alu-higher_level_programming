@@ -1,3 +1,3 @@
 #!/bin/bash
-#curl size
-curl -sI $1 | grep Content-Length | tail -c 4
+# getting content and displaying just content length information 
+curl -sI "$1" | grep "Content-Length" | cut -d' ' -f 2

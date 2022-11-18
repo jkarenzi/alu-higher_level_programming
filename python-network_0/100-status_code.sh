@@ -1,3 +1,3 @@
 #!/bin/bash
-# display methods
+#Send a GET request
 curl -s -o /dev/null -w "%{http_code}" "$1"
