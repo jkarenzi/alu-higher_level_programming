@@ -1,8 +1,8 @@
 The ``0-add_integer.py`` module
- 
+----------------------------
 
 Using ``add_integer`` function
- 
+-----------------------------
 
 
 importing the function from the module:
@@ -13,7 +13,7 @@ checking use of module documentation:
 	>>> len(count) > 1
 	True
 
-checking  documentation:
+checking function documentation:
 	>>> count = __import__("0-add_integer").add_integer.__doc__
 	>>> len(count) > 1
 	True
@@ -46,19 +46,19 @@ checking int and string:
 	>>> add_integer(1, "2")
 	Traceback (most recent call last):
 	...
-	TypeError: y must be an integer
+	TypeError: b must be an integer
 
 check string and int:
 	>>> add_integer("1", 1)
 	Traceback (most recent call last):
 	...
-	TypeError: x must be an integer
+	TypeError: a must be an integer
 
 check string and string:
 	>>> add_integer("1", "1")
 	Traceback (most recent call last):
 	...
-	TypeError: x must be an integer
+	TypeError: a must be an integer
 
 checking for overflow:
 	>>> add_integer(1, float('inf'))
