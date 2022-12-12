@@ -4,7 +4,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """ rectangle class """
+    """ a rectangle class """
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """init general"""
@@ -16,12 +16,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """width getter"""
+        """getting the width"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ width setter """
+        """setting the width """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -35,7 +35,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
-        """height setter"""
+        """setting height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -44,12 +44,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x getter"""
+        """getting x"""
         return self.__x
 
     @x.setter
     def x(self, value):
-        """x setter"""
+        """setting x"""
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -58,12 +58,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y getter"""
+        """getting y"""
         return self.__y
 
     @y.setter
     def y(self, value):
-        """ y setter"""
+        """ setting y"""
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
@@ -71,17 +71,17 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        """ area cal """
+        """ area  """
         return (self.__height * self.__width)
 
     def display(self):
-        """ graphic representation """
+        """ graphic form """
         print('\n' * self.__y, end='')
         for i in range(self.__height):
             print(' ' * self.__x + '#' * self.__width)
 
     def __str__(self):
-        """ the string representation """
+        """ the string form """
         d = self.id
         a = self.__x
         b = self.__y
@@ -112,7 +112,6 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """just dictionary
-        representation
         """
         dict = {}
         dict["id"] = self.id

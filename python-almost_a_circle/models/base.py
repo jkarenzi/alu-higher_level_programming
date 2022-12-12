@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-just module documentation
-"""
+"""the 
+   base """
 import json
 import csv
 # import turtle
@@ -9,8 +8,8 @@ from random import choice as random
 
 
 class Base:
-    """ this is a base class
-    that keeps track of ids"""
+    """ a class that keeps 
+    track of ids"""
     id = 0
     __nb_objects = 0
 
@@ -24,7 +23,7 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """
-        returns json strings
+        a function that returns json strings
         """
         if list_dictionaries is None:
             list_dictionaries = []
@@ -32,8 +31,8 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """Writes the JSON string representation of list_objs to a file.
-        Args:
+        """a function that writes the JSON string representation of list_objs to a file.
+        Arguments:
             list_objs (list): a list of objects.
         """
         lst = []
@@ -45,7 +44,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        """just another function"""
+        """function"""
         if json_string is None or len(json_string) == 0:
             return []
         return json.loads(json_string)
@@ -53,7 +52,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """
-        just function play with instances
+        instances
         """
         if cls.__name__ == "Rectangle":
             tempo = cls(1, 1)
@@ -65,7 +64,7 @@ class Base:
     @classmethod
     def load_from_file(cls):
         """
-        load from file
+        loading from file
         """
         fn = cls.__name__ + ".json"
         lst = []
@@ -81,7 +80,7 @@ class Base:
     @classmethod
     def save_to_file_csv(cls, list_objs):
         """
-        function serializes in csv
+        function csv
         """
         fn = cls.__name__ + ".csv"
         if fn == "Rectangle.csv":
@@ -101,7 +100,7 @@ class Base:
     @classmethod
     def load_from_file_csv(cls):
         """
-        function deserializes from csv
+        a function that deserializes from csv
         """
         try:
             fn = cls.__name__ + ".csv"
