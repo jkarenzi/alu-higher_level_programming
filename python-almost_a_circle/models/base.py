@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""the 
-   base """
+"""the base """
 import json
 import csv
 # import turtle
 from random import choice as random
 
-
 class Base:
-    """ a class that keeps 
-    track of ids"""
+    """ a class that keeps track of ids"""
     id = 0
     __nb_objects = 0
 
